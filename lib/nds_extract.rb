@@ -30,7 +30,7 @@ def directors_totals(nds)
  result = { }
  count = 0
  while count < directors_database.size do
-   y = directors_database[index][:name]
+   y = directors_database[index][nds]
    hash[y] = gross_for_director
    count += 1
  end
