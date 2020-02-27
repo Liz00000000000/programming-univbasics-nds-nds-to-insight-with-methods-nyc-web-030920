@@ -3,7 +3,7 @@ require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(director)
+def gross_for_director(nds)
   #count = 0
   #array = [ ]
   #while count < director_data.size do
@@ -14,8 +14,8 @@ def gross_for_director(director)
   #return array
   total = [ ]
    index = 0
-     while index < directors_database[director].size do
-       x = directors_database [director][index][:worldwide_gross]
+     while index < directors_database[:nds].size do
+       x = directors_database [:nds][index][:worldwide_gross]
      total << x
      index += 1
    end
