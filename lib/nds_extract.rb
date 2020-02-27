@@ -29,16 +29,15 @@ end
 def directors_totals(nds)
  result = { }
  count = 0
- index = 0
+
   while count < directors_database.size do
+    
    y = directors_database[index][nds]
 
-   while index < directors_database[nds][:movies].size do
-   hash[y] = directors_database[0][:movies][index][:worldwide_gross]
+   hash[y] = gross_for_director
 
    count += 1
-    end
-    index += 1
+
  end
   return hash
   nil
