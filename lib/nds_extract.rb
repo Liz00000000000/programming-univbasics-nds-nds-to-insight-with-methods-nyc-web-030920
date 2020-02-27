@@ -14,8 +14,8 @@ def gross_for_director(director)
   #return array
   total = [ ]
    index = 0
-     while index < directors_database.size do
-       x = directors_database[director][index][:worldwide_gross]
+     while index < directors_database[director].size do
+       x = directors_database [director][index][:worldwide_gross]
      total << x
      index += 1
    end
