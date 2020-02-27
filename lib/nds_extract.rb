@@ -19,7 +19,7 @@ def gross_for_director(director)
      total << x
      index += 1
    end
-   puts total.sum
+   return total.sum
 end
 
 # Write a method that, given an NDS creates a new Hash
