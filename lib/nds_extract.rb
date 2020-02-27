@@ -3,8 +3,23 @@ require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(director_data)
-
+def gross_for_director(director)
+  #count = 0
+  #array = [ ]
+  #while count < director_data.size do
+  #  x = director_data[count][:worldwide_gross]
+  #  x << array
+  #  count += 1
+  #end
+  #return array
+  total = [ ]
+   index = 0
+     while index < director_data[:movies][director].size do
+       x = director_data[:movies][director][:worldwide_gross][index]
+     total << x
+     index += 1
+   end
+   puts total.sum
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -12,6 +27,7 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  result = {}
+ result = {}
+
   nil
 end
