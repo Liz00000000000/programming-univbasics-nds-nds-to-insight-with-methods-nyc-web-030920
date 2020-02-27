@@ -14,12 +14,12 @@ def gross_for_director(nds)
   #return array
   total = [ ]
    index = 0
-     while index < directors_database[nds][:movies].size do
-       x = directors_database[nds][:movies][index][:worldwide_gross]
+     while index < directors_database[0][:movies].size do
+       x = directors_database[0][:movies][index][:worldwide_gross]
      total << x
      index += 1
    end
-   return total.sum
+   return total
 end
 
 # Write a method that, given an NDS creates a new Hash
