@@ -27,7 +27,13 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
- result = {}
-
+ result = { }
+ count = 0
+ while count < directors_database.size do
+   y = directors_database[index][:name]
+   hash[y] = gross_for_director
+   count += 1
+ end
+  return hash
   nil
 end
